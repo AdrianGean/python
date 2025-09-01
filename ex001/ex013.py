@@ -19,7 +19,7 @@ while True:
             for i, tarefa in enumerate(tarefas):
                 status = "Concluída" if tarefa['concluida'] else "Pendente"
                 print(f"{i+1}. {tarefa['tarefa']} - {status}")
-            try:
+            try:                        
                 indice = int(input("Digite o número da tarefa a ser marcada como concluída: ")) - 1
                 if 0 <= indice < len(tarefas):
                     tarefas[indice]['concluida'] = True
